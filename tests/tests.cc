@@ -78,12 +78,12 @@ TEST_CASE("Example: Print Prompt Ledger", "[ex-3]") {
 TEST_CASE("Example: Deposit Cash", "[ex-4]") {
   Atm atm;
   atm.RegisterAccount(
-      12345678, 1234, "Sam Sepiol", 300.30);  // card num, pin, name, balance
-  atm.DepositCash(12345678, 1234, 20);
+      1234578, 124, "Sam Sepiol", 30.30);  // card num, pin, name, balance
+  atm.DepositCash(1234578, 124, 20);
   auto accounts = atm.GetAccounts();
-  Account sam_account = accounts[{12345678, 1234}];
+  Account sam_account = accounts[{1234578, 124}];
 
-  REQUIRE(sam_account.balance == 320.30);
+  REQUIRE(sam_account.balance == 50.30);
 }
 /*
 TEST_CASE("Example: GetTransactions", "[ex-5]") {
